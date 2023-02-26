@@ -1,0 +1,13 @@
+Contact Manager Application
+---------------------------
+-> Express & MongoDB
+->
+
+ npm install dotenv  express-validator mongoose cors @types/dotenv  @types/express-validator @types/mongoose @types/cors
+
+ -> Create contact -> new ContactsTable({...}).save();
+ -> get all contacts -> ContactsTable.find();
+ -> get a contact with primaryKey -> ContactsTable.findById(id);
+ -> get a contact with column Name -> ContactsTable.findOne({name : name});
+ -> update a contact with primaryKey -> ContactsTable.findByIdAndUpdate(id, {$set : obj}, {new : true});
+ -> delete a contact with primaryKey -> ContactsTable.findByIdAndDelete(id);
